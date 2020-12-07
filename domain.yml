@@ -1,0 +1,37 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- main_menu
+responses:
+  utter_greet:
+  - buttons:
+    - payload: /main_menu
+      title: Let's see
+    text: "Hello Guest!\n\nWelcome to Costa Rica Adventure, where your comfrot, personal\
+      \ safety and total satisfaction is the highest priority\n\nI'm VIP concierge\
+      \ and i'wiil help you to make your Costa Rica vacation to be perfect ⭐⭐⭐⭐⭐ right\
+      \ after you click the button below"
+  utter_main_menu:
+  - buttons:
+    - payload: /plan_my_trip
+      title: 📅Plan My Trip
+    - payload: /activities_offered
+      title: Activities Offered
+    - payload: /contact_us
+      title: 📞 Contact Us
+    - payload: /testimonials
+      title: ⭐ Testimoials
+    - payload: /about_costa_rica
+      title: 🌅 About Costa Rica
+    - payload: /tips_and_tricks
+      title: 👍 Tips And Tricks
+    text: Ready to make your Costa Rica trip planning easy, make it worry-free and
+      seamless?!
