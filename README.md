@@ -18,7 +18,7 @@ $ rasa run actions
 
 3. Start rasa-x if you want to change intent, dialogue and train it again or skip this step.
 ```
-$ rasa run actions
+$ rasa x
 ```
 
 
